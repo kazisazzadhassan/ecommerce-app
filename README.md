@@ -40,7 +40,7 @@ It displays products from a JSON dataset in a responsive grid, with category nav
 - **State Management** – [Pinia](https://pinia.vuejs.org/)
 - **Language** – TypeScript
 - **Routing** – Nuxt's file‑based router
-- **Data** – Static JSON file (`public/data.json`)
+- **Data** – Static JSON file (`assets/data.json`)
 
 ---
 
@@ -48,14 +48,15 @@ It displays products from a JSON dataset in a responsive grid, with category nav
 
 ### Prerequisites
 
-- Node.js (v18 or later)
+- Node.js (v22 or later)
 - npm / yarn / pnpm / bun
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone git@github.com:kazisazzadhassan/ecommerce-app.git
 cd ecommerce-app
+```
 
 ## Setup
 
@@ -126,17 +127,6 @@ yarn preview
 # bun
 bun run preview
 ```
-
-## Project Structure (key folders)
-
-ecommerce-app/
-├── components/          # Reusable Vue components (cards, nav, selector, etc.)
-├── composables/         # Composition functions (filtering/sorting logic)
-├── pages/               # Route pages (index, product/[id])
-├── public/              # Static assets (data.json)
-├── stores/              # Pinia store (dataStore.ts)
-├── app.vue              # Main layout (app bar, drawer, main content)
-└── nuxt.config.ts       # Nuxt configuration with Vuetify module
 
 
 ## Data Source
