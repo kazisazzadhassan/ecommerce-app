@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import data from '~/assets/data.json' // import directly
+import data from '~/assets/data.json'
 
 // ---- Types ----
 export interface Variant {
@@ -61,7 +61,7 @@ state: () => ({
     loaded: false
   }),
   actions: {
-    loadData() {  // no async needed
+    loadData() { 
       if (this.loaded) return
       this.products = data.products
       this.categories = data.categories
